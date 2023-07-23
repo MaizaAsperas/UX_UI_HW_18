@@ -85,9 +85,7 @@ body {
   /* Project description */
   .workGrid div p {
     text-align: justify;
-    max-width: 300px;
     margin-top: 30px;
-    margin-left: 300px; 
   }
   
   /* "View Project" button */

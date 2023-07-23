@@ -1,76 +1,117 @@
+
 body {
     font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
   }
-
-/* navbar/header */
-
-.header-section {
+  
+  /* Style for the "My UX Skills" section */
+  .mySkills {
     background-image: linear-gradient(to top, #BEB6C6, #FAE6D7);
-    height: 150px;
-}
-
-.inline-block {
-    display: inline-block;
-    vertical-align: top;
-}
-
-.logo {
-    width: 10%;
-    padding: 1%;
-}
-
-.image-size {
-    width:100px;
-    height:100px;
-}
-nav {
-    width: 80%;
-    padding: 1%;
-}
-
-ul {
-    width: 20%;
-    margin-left: auto;
-}
-
-li {
+    padding: 20px;
+  }
+  
+  /* Flex container for "My UX Skills" section */
+.flexContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Flex children (individual skills) */
+  .flexContainer .flexChild {
+    width: 33%;
+    margin: 10px;
     padding: 10px;
-}
-
-/* hero image */
-
-.heroImg {
-    height: 800px;
-    padding: 25px;
-}
-
-.content {
-    width: 800px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Skill icon */
+  .flexContainer .flexChild img {
+    display: block;
     margin: 0 auto;
-}
-
-.custom-button {
+    width: 60px;
+    height: 60px;
+  }
+  
+  /* Skill name/description */
+  .flexContainer .flexChild h3 {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  /* Paragraph about how the skill is used */
+  .flexContainer .flexChild p {
+    text-align: justify;
+    margin-top: 10px;
+  }
+  
+ /* Toolkit Image Grid */
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 50px;
+    margin-top: 50px;
+  }
+  
+  /* CSS Grid for "My Work" section */
+  .workGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+      "project1 project2"
+      "project3";
+    grid-gap: 20px;
+  }
+  
+  /* Individual grid items (projects) */
+  .workGrid div {
+    padding: 10px;
+    background-image: linear-gradient(to top, #FAE6D7, #BEB6C6);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Project title */
+  .workGrid div h4 {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  /* Project description */
+  .workGrid div p {
+    text-align: justify;
+    max-width: 300px;
+    margin-top: 30px;
+    margin-left: 300px; 
+  }
+  
+  /* "View Project" button */
+  .workGrid div button {
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
     background-color: #ffffff; 
     color: #7c7ca2; 
     border-color: #BEB6C6;
     border-radius: 20px; 
     padding: 10px 20px; 
     box-shadow: 2px 2px 4px #737397;
-}
+  }
 
-/* footer */
-
-footer {
-    background-image: linear-gradient(to top, #FAE6D7, #BEB6C6);
-    padding: 10px;
-}
-
-footer ul {
-    display: inline-block;
-    vertical-align: top;
-    padding: 0;
-}
-
-footer li {
-    padding: 10px;
-}
+  /* Project Image */
+  .workGrid div img {
+    display: block; 
+    margin: 0 auto; 
+  }
+  
+  /* "View all projects" text */
+  .myWork h3 {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
